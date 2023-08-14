@@ -1,0 +1,65 @@
+.stick-figure {
+    position: relative;
+    width: 100px;
+    height: 200px;
+    margin: 100px auto;
+  }
+
+  .head {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+
+  .body {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 8px;
+    height: 100px;
+    background-color: black;
+    transform: translateX(-50%);
+  }
+
+  .arm {
+    position: absolute;
+    top: 100px;
+    width: 70px;
+    height: 8px;
+    background-color: black;
+    transform-origin: top;
+  }
+
+  .left-arm {
+    left: -8px;
+    transform: rotate(-50deg);
+  }
+
+  .right-arm {
+    right: -8px;
+    transform: rotate(50deg);
+  }
+
+  .leg {
+    position: absolute;
+    top: 175px;
+    width: 65px;
+    height: 8px;
+    background-color: black;
+    transform-origin: top;
+  }
+
+  .left-leg {
+    left: 40px;
+    transform: rotate(45deg);
+  }
+
+  .right-leg {
+    right: 40px;
+    transform: rotate(-45deg);
+  }
